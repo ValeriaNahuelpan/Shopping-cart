@@ -13,11 +13,12 @@ export default function Layout({title, children}) {
             <link rel="icon" href="/favicon.ico" />
         </Head>
           <div>
-            <Navbar bg="light" expand="lg">
-                    <Navbar.Brand className='ms-3' href="#home">Navbar</Navbar.Brand>
+            <Navbar className='navbar-dark' bg="dark" expand="lg">
+                <Container>
+                    <Navbar.Brand href="#home">Navbar</Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
-                        <Nav className="me-auto">
+                        <Nav className="ms-auto">
                             <Nav.Link href="#home">Home</Nav.Link>
                             <Nav.Link href="#link">Link</Nav.Link>
                             <NavDropdown title="Dropdown" id="basic-nav-dropdown">
@@ -33,6 +34,7 @@ export default function Layout({title, children}) {
                             </NavDropdown>
                         </Nav>
                     </Navbar.Collapse>
+                </Container>
             </Navbar>
           </div>
         <div>
